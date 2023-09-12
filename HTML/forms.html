@@ -11,15 +11,19 @@
     <h1> Form Example</h1>
 
     <form action="" method="">
+        <fieldset>
+            <legend>Employee Details</legend>
         <label for="">Name :</label>
-        <input type="text"> <br> <br>
+        <input type="text" placeholder="enter your name" size="50" > <br> <br>
 
         <label for="">Email :</label>
         <input type="email"> <br> <br>
 
         <label for="">Password :</label>
-        <input type="password"> <br><br>
-
+        <input type="password" > <br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Employee Other Information</legend>
         <label for="">Gender :</label>
         <input type="radio" name="gender" id="male"> <label for="male"> Male</label>
         <input type="radio" name="gender" id="female"> <label for="female"> Female</label>
@@ -41,7 +45,7 @@
         <br><br>
 
         <label for="">Mobile No : </label>
-        <input type="number" name="" id="">
+        <input type="number" name="" id="" autofocus>
         <br><br>
 
         <label for="">Favorite Color</label>
@@ -49,8 +53,9 @@
         <br><br>
 
         <label for="">Upload Your Document</label>
-        <input type="file">
+        <input type="file" multiple>
         <br><br>
+    </fieldset>
         <label for="">Language :</label>
         <select>
             <option value=""> Nepali</option>
