@@ -48,3 +48,100 @@ header nav .list-items ul li a{
    letter-spacing: 7px;
    font-size: 13px;
 }
+
+header nav .list-items ul li a:hover{
+    color:green;
+    font-weight: bold;
+}
+
+.slider{
+    background-color: #1ABC9C;
+    text-align: center;
+    color:white
+}
+
+.slider img{
+    border-radius: 50%;
+}
+
+.slider h3{
+    padding: 60px 0px 35px 0;
+    font-size: 25px;
+}
+.slider h2{
+    padding: 50px 0px 65px 0;
+    font-size: 20px;
+}
+
+.banner{
+    background-color: #474E5D;
+    text-align: center;
+    color: white;
+}
+.banner h3{
+    padding: 60px 0px 35px 0;
+}
+.banner p{
+    padding: 0 0 35px 0;
+    width: 1300px;
+    margin: auto;
+    line-height: 30px;
+}
+.banner .search{
+    padding-bottom: 35px;
+}
+.banner .search button{
+ padding: 10px 25px 10px 25px;
+ border-style: none;
+ border-radius: 7px;
+ font-size: 18px;
+}
+
+.image-gallery{
+
+}
+.image-gallery .heading{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    color:#555555;
+    padding: 45px 0 25px 0;
+}
+
+.main-gallery{
+    display: flex;
+    justify-content: space-evenly   ;
+}
+.main-gallery .gallery{
+    width: 30%;
+}
+
+.main-gallery .gallery p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    color:#555555;
+    text-align: center;
+}
+.main-gallery .gallery img{
+    width: 100%;
+}
+
+footer{
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background-color: #2F2F2F;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .footer-text{
+    
+    /* line-height: 29px; */
+}
+
+footer .footer-text span{
+    color: #23527c;
+}
