@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{background-color: red;}
+        .green{background-color: green;}
+        .yellow{background-color: yellow;}
+        .purple{background-color: purple;}
+
+        .box{
+            width: 250px;
+            height: 250px;
+            border: 1px solid black;
+            border-radius: 50%;
+
+            animation-name: orbit;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .sub-box{
+            width: 80px;
+            height: 80px;
+            border: 1px solid red;
+            border-radius: 50%;
+
+            
+        }
+
+        @keyframes orbit {
+                0%{rotate: 0;}
+                100%{rotate: 365deg;}
+        }
+       body{
+        margin: 200px;
+        
+       }
+    </style>
+</head>
+<body>
+    
+    
+        <div class="box ">
+            <div class="sub-box"></div>
+        </div>
+  
+</body>
+</html>

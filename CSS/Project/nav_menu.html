@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Selector-work.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            background-color: rgb(162, 49, 8);
+            width: 120px;
+            margin: 0.5px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            float: left;
+            color: white;
+            font-size: 20px;
+        }
+
+        ul li:hover {
+            background-color: black;
+        }
+        ul ul{
+            display: none;
+        }
+        ul li ul li {
+            
+            background-color: black;
+            width: 195px;
+            text-align: left;
+            margin: 0px;
+            padding: 0 0 0 8px;
+            position: relative;
+        }
+
+        /* ul li:hover ul li {
+            display: block;
+        } */
+
+        ul li ul li:hover {
+            background-color: rgb(162, 49, 8);
+        }
+
+        ul li ul li ul {
+            
+            position: absolute;
+            top:0;
+            left:100%;
+        }
+
+        ul li:hover > ul {
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li> <i class="fa-solid fa-house"></i> Home</li>
+        <li> <i class="fa-solid fa-address-card"></i> About
+            <ul>
+                <li>Office</li>
+                <li>Compnay</li>
+                <li>School</li>
+                <li>College
+                    <ul>
+                        <li>Student</li>
+                        <li>Staff</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Services
+            <ul>
+                <li>Graphics Design</li>
+                <li>Web Design
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </li>
+                <li>Marketing</li>
+                <li>Branding
+                    <ul>
+                        <li>Corporate Branding</li>
+                        <li>Personal Branding</li>
+                        <li>Place Branding</li>
+                        <li>Digital Branding
+                            <ul>
+                                <li>Mobile</li>
+                                <li>Laptop</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+        <li></li>
+    </ul>
+
+    
+</body>
+
+</html>
