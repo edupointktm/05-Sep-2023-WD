@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: rgb(17, 0, 255);
+        }
+        .green{
+            background-color: rgb(64, 255, 0);
+        }
+        .purple{
+            background-color: purple;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+
+        .box{
+            /* width: 200px; */
+            /* height: 200px; */
+        }
+        
+        .container{
+            background-color: rgb(206, 203, 203);
+           display: grid;
+           gap:5px;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+           grid-template-rows: 100px 100px 100px;
+        }
+        .box1{
+            /* grid-column-start: 1;
+            grid-column-end: 5; */
+            grid-column: 1/5;
+        }
+        .box2{
+            grid-row: 2/4;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box1 red">One</div>
+        <div class="box2 blue">Two</div>
+        <div class="box3 green">Three</div>
+        <div class="box4 purple">Four</div>
+        <div class="box5 red">Five</div>
+        <div class="box5 blue">Six</div>
+    </div>
+</body>
+</html>

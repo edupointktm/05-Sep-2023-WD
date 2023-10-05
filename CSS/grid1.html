@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: rgb(17, 0, 255);
+        }
+        .green{
+            background-color: rgb(64, 255, 0);
+        }
+        .purple{
+            background-color: purple;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+
+        .box{
+            /* width: 200px; */
+            /* height: 200px; */
+        }
+        
+        .container{
+            width: 500px;
+            background-color: rgb(206, 203, 203);
+           display: grid;
+           gap:5px;
+           grid-template-columns: repeat(3, 1fr) ;
+           grid-template-rows: 100px 200px 200px 100px;
+
+           grid-template-areas: "header header header" 
+                                "sidebar content1 content1"
+                                "sidebar content2 content3"
+                                "footer footer footer" ;
+        }
+       .header{
+          grid-area: header;
+       }
+
+       .sidebar{
+         grid-area:sidebar;
+       }
+       .content1{
+         grid-area: content1;
+       }
+       .content2{
+         grid-area: content2;
+       }
+       .content3{
+         grid-area: content3;
+       }
+       .footer{
+        grid-area: footer;
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header red">HEADER</div>
+        <div class="sidebar blue">SIDEBAR</div>
+        <div class="content1 green">CONTENT1</div>
+        <div class="content2 purple">CONTENT2</div>
+        <div class="content3 red">CONTENT3</div>
+        <div class="footer blue">FOOTER</div>
+    </div>
+</body>
+</html>
