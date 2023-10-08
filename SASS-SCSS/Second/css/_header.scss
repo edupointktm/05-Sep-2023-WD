@@ -1,0 +1,44 @@
+header {
+    background-color: $primary-color;
+
+    .container {
+        width: 1200px;
+        margin: auto;
+        padding: 20px;
+        color: $colorwhite;
+
+        .nav {
+            @extend .flex;
+            justify-content: space-between;
+
+            .logo {
+                font-size: $primary-fs+5;
+
+                span {
+                    font-size: $primary-fs+10;
+                    color: yellow;
+                }
+            }
+
+            .list-item {
+                ul {
+                    @extend .flex;
+                    gap: $gap+20;
+
+                    li {
+                        a {
+                            font-size: $primary-fs;
+                            color: $colorwhite;
+
+                            &:hover {
+                                color: yellow;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

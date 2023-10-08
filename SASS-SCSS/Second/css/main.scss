@@ -1,0 +1,29 @@
+@import "Variable";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: $color-balck;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    gap: $gap;
+}
+@import "slider";
+@import "header";
+@import "product";
+@import "footer";
+
+
