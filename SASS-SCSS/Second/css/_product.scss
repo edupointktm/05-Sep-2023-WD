@@ -1,3 +1,7 @@
+@mixin layout-wh($w:auto, $h:auto){
+    width: $w;
+    height: $h;
+}
 .product{
     .container{
         padding-top: 25px;
@@ -12,11 +16,11 @@
                 width: 300px;
                 text-align: center;
                 .card-image{
-                    height: 250px;
-                    width: 100%;
+                    
+                    @include layout-wh(100%, 250px);
                     img{
-                        height: 100%;
-                        width: 100%;
+                       
+                        @include layout-wh(100%, 100%);
                         border-radius: 50%  ;
                     }
 
