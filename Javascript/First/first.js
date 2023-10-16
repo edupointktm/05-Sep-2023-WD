@@ -1,0 +1,5 @@
+alert("Welcome to JavaScript Program")
+        confirm("Welcome to Javascript World in confirm")
+        prompt("Welcome to Javascript in Prompt")
+        document.write("<h2> Welcome to JavaScript in document.wirte </h2>")
+        console.log("Welcome to Javascript in console.log")
