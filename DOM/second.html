@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeColorinRed()">Color Red</button> 
+    <button onclick="document.querySelector('#content').classList.add('hide')">Hide</button>
+    <button onclick="document.querySelector('#content').classList.remove('hide')">Show</button>
+
+    <button onclick="document.querySelector('#content').classList.toggle('hide')">Hide/Show</button>
+    <button id="show-hide" onclick="showHide()">Hide</button>
+    <input type="color" id="color" onchange="changeColor()">
+    <select id="size" onchange="fontSize()">
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+    </select>
+    <br><br>
+    <div id="content">BROADWAY INFOSYS</div>
+    <hr>
+    <button id="on-off" onclick="onOff()">ON</button> <br><br>
+    <img src="https://prabhatmallik.com.np/dom/image/OFF.jpg" width="20%" id="img-on-off">
+    
+
+    <script>
+        function changeColorinRed(){
+            document.querySelector('#content').style.color="red"
+        }
+
+        function showHide(){
+            var get_caption = document.querySelector('#show-hide').innerHTML
+
+            if(get_caption=="Hide"){
+                document.querySelector('#show-hide').innerHTML="Show"
+            }
+            else{
+                document.querySelector('#show-hide').innerHTML="Hide"
+            }
+            document.querySelector('#content').classList.toggle('hide')
+        }
+
+        changeColor=()=>{
+            var get_color_value = document.querySelector('#color').value
+            document.querySelector('#content').style.color=get_color_value
+            
+        }      
+        
+        fontSize=()=>{
+            var get_value = document.querySelector('#size').value
+            document.querySelector('#content').style.fontSize=get_value+"px"
+            
+        }
+        onOff = ()=>{
+            var get_caption = document.querySelector('#on-off').innerHTML
+           if(get_caption=="ON"){
+            document.querySelector('#on-off').innerHTML="OFF"
+            document.querySelector('#img-on-off').src="https://prabhatmallik.com.np/dom/image/ON.jpg"
+           }
+           else{
+            document.querySelector('#on-off').innerHTML="ON"
+            document.querySelector('#img-on-off').src="https://prabhatmallik.com.np/dom/image/OFF.jpg"
+           }
+        }
+    </script>
+</body>
+</html>
